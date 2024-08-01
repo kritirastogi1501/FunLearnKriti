@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fun Learning Page on Good Health and Well-Being</title>
+  <link rel="stylesheet" href="FUN_LEARN.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="logo.jpg" alt="Fitness Tips Logo" class="logo">
+            <div class="header-text">
+                <h1>##    LEARNING WITH FUN!    ##</h1>
+            </div>
+        </div>
+    </header>
+
+  <img src="doctor.jpg" alt="Cartoon Character" class="cartoon"> 
+  <div class="container">
+    <div class="section" id="quiz">
+      <h2>>> TAKE A MOMENT TO ATTEMPT THE QUIZ!</h2>
+      <form id="quizForm">
+        <div class="question">
+          <p>1. What is the recommended amount of daily exercise for adults?</p>
+          <label><input type="radio" name="q1" value="30 mins"> 30 mins</label>
+          <label><input type="radio" name="q1" value="1 hour"> 1 hour</label>
+          <label><input type="radio" name="q1" value="2 hours"> 2 hours</label>
+        </div>
+
+        <div class="question">
+          <p>2. How many hours of sleep is recommended for adults?</p>
+          <label><input type="radio" name="q3" value="5-6 hours"> 5-6 hours</label>
+          <label><input type="radio" name="q3" value="7-8 hours"> 7-8 hours</label>
+          <label><input type="radio" name="q3" value="9-10 hours"> 9-10 hours</label>
+        </div>
+        <div class="question">
+            <p>3. Which vitamin is known as the "sunshine vitamin"?</p>
+            <label><input type="radio" name="q2" value="Vitamin A"> Vitamin A</label>
+            <label><input type="radio" name="q2" value="Vitamin C"> Vitamin C</label>
+            <label><input type="radio" name="q2" value="Vitamin D"> Vitamin D</label>
+          </div>
+          <div class="question">
+            <p>4. What is the primary benefit of drinking water?</p>
+            <label><input type="radio" name="q5" value="Hydration"> Hydration</label>
+            <label><input type="radio" name="q5" value="Weight Loss"> Weight Loss</label>
+            <label><input type="radio" name="q5" value="Energy"> Energy</label>
+          </div>
+        <div class="question">
+          <p>5. Which of these is a healthy fat source?</p>
+          <label><input type="radio" name="q4" value="Butter"> Butter</label>
+          <label><input type="radio" name="q4" value="Olive Oil"> Olive Oil</label>
+          <label><input type="radio" name="q4" value="Lard"> Lard</label>
+        </div>
+
+        <div class="question">
+          <p>6. Which of these foods is a good source of protein?</p>
+          <label><input type="radio" name="q6" value="Apple"> Apple</label>
+          <label><input type="radio" name="q6" value="Chicken"> Chicken</label>
+          <label><input type="radio" name="q6" value="Bread"> Bread</label>
+        </div>
+        <div class="question">
+          <p>7. What is a common benefit of regular physical activity?</p>
+          <label><input type="radio" name="q7" value="Better Sleep"> Better Sleep</label>
+          <label><input type="radio" name="q7" value="Increased Stress"> Increased Stress</label>
+          <label><input type="radio" name="q7" value="Weight Gain"> Weight Gain</label>
+        </div>
+        <button type="button" class="btn" onclick="calculateScore()">Submit</button>
+      </form>
+      <div id="score" style="margin-top: 20px;"></div>
+      <p>_____</p>
+    </div>
+    
+    <div class="section" id="fun-facts">
+      <h2>>> IT'S GOOD TO KNOW....</h2>
+      <div class="fact">
+        <p>1. Did you know that drinking water can boost your metabolism by up to 30%?</p>
+      </div>
+      <div class="fact">
+        <p>2. Regular exercise can reduce the risk of chronic diseases such as heart disease, diabetes, and cancer.</p>
+      </div>
+      <div class="fact">
+        <p>3. A balanced diet can help improve your mood and energy levels.</p>
+      </div>
+      <div class="fact">
+        <p>4. Getting enough sleep is crucial for maintaining a healthy immune system.</p>
+      </div>
+      <div class="fact">
+        <p>5. Taking a 10-minute walk after meals can help with digestion and reduce blood sugar levels.</p>
+      </div>
+      <div class="fact">
+        <p>6. Eating a variety of colorful fruits and vegetables can provide your body with a wide range of essential nutrients.</p>
+      </div>
+      <div class="fact">
+        <p>7. Smiling and laughing can improve your mood and reduce stress levels.</p>
+      </div>
+      <p>_____</p>
+    </div>
+
+    <div class="section" id="survey">
+      <h2>>> NOW,A SURVEY FOR YOU!</h2>
+      <form id="surveyForm">
+        <div class="question">
+          <p>1. How often do you exercise per week?</p>
+          <label><input type="radio" name="s1" value="1-2 times"> 1-2 times</label>
+          <label><input type="radio" name="s1" value="3-4 times"> 3-4 times</label>
+          <label><input type="radio" name="s1" value="5+ times"> 5+ times</label>
+        </div>
+        <div class="question">
+          <p>2. Do you include fruits and vegetables in your daily diet?</p>
+          <label><input type="radio" name="s2" value="Yes"> Yes</label>
+          <label><input type="radio" name="s2" value="No"> No</label>
+        </div>
+        <div class="question">
+          <p>3. How many hours of sleep do you get on average?</p>
+          <label><input type="radio" name="s3" value="Less than 6 hours"> Less than 6 hours</label>
+          <label><input type="radio" name="s3" value="6-8 hours"> 6-8 hours</label>
+          <label><input type="radio" name="s3" value="More than 8 hours"> More than 8 hours</label>
+        </div>
+        <div class="question">
+          <p>4. Do you drink at least 8 cups of water daily?</p>
+          <label><input type="radio" name="s4" value="Yes"> Yes</label>
+          <label><input type="radio" name="s4" value="No"> No</label>
+        </div>
+        <div class="question">
+          <p>5. How often do you visit a healthcare provider?</p>
+          <label><input type="radio" name="s5" value="Regularly"> Regularly</label>
+          <label><input type="radio" name="s5" value="Occasionally"> Occasionally</label>
+          <label><input type="radio" name="s5" value="Rarely"> Rarely</label>
+        </div>
+        <div class="question">
+          <p>6. Do you feel stressed on a regular basis?</p>
+          <label><input type="radio" name="s6" value="Yes"> Yes</label>
+          <label><input type="radio" name="s6" value="No"> No</label>
+        </div>
+        <div class="question">
+          <p>7. Do you take time for relaxation and leisure activities?</p>
+          <label><input type="radio" name="s7" value="Yes"> Yes</label>
+          <label><input type="radio" name="s7" value="No"> No</label>
+        </div>
+        <button type="submit" class="btn">Submit Survey</button>
+      </form>
+      <p>     </p>
+      <p>THANK YOU USER!! </p>
+    </div>
+  </div>
+
+  <script>
+    function calculateScore() {
+      const answers = {
+        q1: '30 mins',
+        q2: 'Vitamin D',
+        q3: '7-8 hours',
+        q4: 'Olive Oil',
+        q5: 'Hydration',
+        q6: 'Chicken',
+        q7: 'Better Sleep'
+      };
+      
+      let score = 0;
+      const form = document.getElementById('quizForm');
+      const formData = new FormData(form);
+      
+      for (let [question, answer] of formData.entries()) {
+        if (answers[question] === answer) {
+          score++;
+        }
+      }
+      
+      document.getElementById('score').innerText = `Your score is ${score} out of 7. Thank you for participating!`;
+    }
+  </script>
+</body>
+</html>

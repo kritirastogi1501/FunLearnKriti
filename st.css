@@ -1,0 +1,64 @@
+body {
+    background-image: url('BACKGROUND.jpg'); 
+    background-size: cover;
+    color: #112fda;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    padding: 20px;
+    text-align:center;
+  }
+.logo {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 150px;
+    height: auto;
+}
+
+  h1 {
+    color:rgb(248, 244, 5);
+    font-family: cursive;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  h2 {
+    color: #0d0e0d;
+    font-size: x-large;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+
+  }
+  .container {
+    background: rgba(167, 212, 223, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    max-width: 800px;
+  }
+  .section {
+    margin-bottom: 30px;
+  }
+  .question, .fact {
+    margin-bottom: 10px;
+    color: #0e0868;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  input[type="radio"], input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  .cartoon {
+    width: 150px;
+    margin: 10px auto;
+    border-radius: 5px;
+  }
+  .btn {
+    background-color: #4521c7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .btn:hover {
+    background-color: #1adaca;
+  }
